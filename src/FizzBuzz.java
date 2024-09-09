@@ -4,17 +4,17 @@
 class FizzBuzz {
 
     public static void main(String[] args) {
-
-        for (int i = 1; i < 100; i++) {
+        int i = 1;
+        while (i < 100) { //The usage of semicolons at the end of the loops are different
 
             // Find out which numbers divide i.
-            boolean divisibleBy3 = i % 3 == 0;
+            boolean divisibleBy3 = i % 3 == 0; // The addition of semicolons at the end of statements
             boolean divisibleBy5 = i % 5 == 0;
 
             // Print our appropriate result.
-            if (divisibleBy3 && divisibleBy5) {
+            if (divisibleBy3 && divisibleBy5) { // The curly bracket usage at the end of the if statement is different
 
-                System.out.println("Fizz Buzz");
+                System.out.println("Fizz Buzz"); // System.out.println is different.
 
             } else if (divisibleBy3) {
 
@@ -29,6 +29,7 @@ class FizzBuzz {
                 System.out.println(i);
 
             }
+            i += 1;
         }
     }
 }
